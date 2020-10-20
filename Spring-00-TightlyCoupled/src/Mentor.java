@@ -1,14 +1,14 @@
 public class Mentor {
 
-    FullTimeMentor fullTimeMentor;      //composition
-    PartTimeMentor partTimeMentor;      //composition
+    FullTimeMentor fullTimeMentor;      // Making a composition with FullTimeMentor class
+    PartTimeMentor partTimeMentor;      // Making a composition with PartTimeMentor class
 
-    public Mentor(FullTimeMentor fullTimeMentor, PartTimeMentor partTimeMentor) {  // creating a constructor
+    public Mentor(FullTimeMentor fullTimeMentor, PartTimeMentor partTimeMentor) {  // creating a constructor with two parameters
         this.fullTimeMentor = fullTimeMentor;
         this.partTimeMentor = partTimeMentor;
     }
 
-    public void manageAccount(){               // creating a method
+    public void manageAccount(){              // creating a method
         fullTimeMentor.createAccount();
         partTimeMentor.createAccount();
     }

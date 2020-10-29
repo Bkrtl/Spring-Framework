@@ -5,6 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class CybertekApp {
+
     public static void main(String[] args) {
 
         ApplicationContext container = new ClassPathXmlApplicationContext("config.xml");
@@ -12,7 +13,5 @@ public class CybertekApp {
         Course course=container.getBean("java",Course.class);
 
         course.getTeachingHours();
-
-        ((ClassPathXmlApplicationContext)container).close(); // close the container, Spring destroy all beans in container
     }
 }

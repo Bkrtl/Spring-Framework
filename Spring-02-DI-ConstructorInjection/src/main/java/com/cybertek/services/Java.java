@@ -8,7 +8,7 @@ public class Java implements Course {
    /*
     OfficeHours officeHours;
 
-    public Java(OfficeHours officeHours) {
+    public Java(OfficeHours officeHours) { // creating a constructor
         this.officeHours = officeHours;
     }
 
@@ -18,12 +18,13 @@ public class Java implements Course {
     }
     /*
     */
+
     ExtraSessions extraSessions;   //interface    // burada yaptığımız polymorpic way yaparak, OfficeHours'a ulaşıyoruz,
-                                        // çünkü OfficeHours, ExtraSessions ı imolement ediyor. Genelde böyle yapıluyor
+                                        // çünkü OfficeHours, ExtraSessions ı imolement ediyor. Genelde böyle yapıluyor, çünkü böyle daha loosely coupling
 
     public Java(ExtraSessions extraSessions) {
         this.extraSessions = extraSessions;
-    }
+    } // creating a constructor
 
     @Override
     public void getTeachingHours() {
